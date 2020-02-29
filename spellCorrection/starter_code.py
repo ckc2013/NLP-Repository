@@ -92,6 +92,7 @@ for line in file:
  
             # 生成所有的有效的候选集和
             candidates = generate_candidates(word)
+            # 如果生成的候选集和为空，先暂时不做处理
             if len(candidates) < 1:
                 continue
             
